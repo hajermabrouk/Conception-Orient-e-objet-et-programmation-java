@@ -9,7 +9,6 @@ public class ZooManagement {
         System.out.print("Entrez le nombre de cages : ");
         int nbrCages = 0;
 
-        // Assurer que l'utilisateur entre un entier valide
         while (true) {
             try {
                 nbrCages = Integer.parseInt(scanner.nextLine());
@@ -25,7 +24,7 @@ public class ZooManagement {
         String message = zooName + " comporte " + nbrCages + " cages.";
         System.out.println(message);
 
-        // Fermez le scanner après utilisation
+
         scanner.close();
     }
 }

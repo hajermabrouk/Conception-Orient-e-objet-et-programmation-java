@@ -18,19 +18,19 @@ public class Zoo {
     public boolean addAnimal(Animal animal) {
         if (animalCount >= nbrCages) {
             System.out.println("Le zoo est plein, impossible d'ajouter un nouvel animal.");
-            return false;  // Impossible d'ajouter un nouvel animal
+            return false;
         }
 
         for (int i = 0; i < animalCount; i++) {
             if (animals[i].getName().equals(animal.getName())) {
                 System.out.println("L'animal " + animal.getName() + " existe déjà dans le zoo.");
-                return false;  // L'animal existe déjà
+                return false;
             }
         }
 
         animals[animalCount] = animal;
         animalCount++;
-        return true;  // Ajout réussi
+        return true;
     }
 
     public boolean removeAnimal(Animal animal) {
@@ -41,12 +41,12 @@ public class Zoo {
                 }
                 animals[animalCount - 1] = null;
                 animalCount--;
-                return true;  // Suppression réussie
+                return true;
             }
         }
 
         System.out.println("L'animal " + animal.getName() + " n'a pas été trouvé dans le zoo.");
-        return false;  // L'animal n'a pas été trouvé
+        return false;
     }
 
     public void displayAnimals() {
@@ -59,10 +59,10 @@ public class Zoo {
     public int searchAnimal(String animalName) {
         for (int i = 0; i < animalCount; i++) {
             if (animals[i].getName().equals(animalName)) {
-                return i;  // Retourne l'indice de l'animal trouvé
+                return i;
             }
         }
-        return -1;  // Retourne -1 si l'animal n'est pas trouvé
+        return -1;
     }
 
     @Override
