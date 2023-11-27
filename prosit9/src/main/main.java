@@ -9,7 +9,7 @@ import java.util.List;
 
 public class main {
     public static void main(String[] args) {
-        Employe employe1 = new Employe(1, "nawres", "ellafi", "gestion", 3);
+        Employe employe1 = new Employe(1, "hajer", "mabrouk", "gestion", 3);
         Employe employe2 = new Employe(2, "nana", "eeeee", "IT", 5);
         Employe employe3 = new Employe(3, "nnn", "ee", "bb", 4);
 
@@ -17,8 +17,8 @@ public class main {
         employes.ajouterEmploye(employe1);
         employes.ajouterEmploye(employe2);
         employes.ajouterEmploye(employe3);
-        employes.rechercherEmploye("nawres");
-        employes.rechercherEmploye("nawres1");
+        employes.rechercherEmploye("hajer");
+        employes.rechercherEmploye("hajer1");
         employes.rechercherEmploye(employe2);
         employes.supprimerEmploye(employe3);
         employes.displayEmploye();
