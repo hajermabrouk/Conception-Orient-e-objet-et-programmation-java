@@ -1,5 +1,5 @@
 # JavaEsprit
-Prosit 10 :
+Prosit 10 ://
 
 Ce prosit concerne la création d'une classe `Département` caractérisée par un identifiant, un nom de département et un nombre d'employés. Cette classe inclut des constructeurs, une redéfinition de la méthode `equals` pour tester l'égalité entre départements en fonction de l'ID et du nom, ainsi qu'une redéfinition de la méthode `toString`.
 
