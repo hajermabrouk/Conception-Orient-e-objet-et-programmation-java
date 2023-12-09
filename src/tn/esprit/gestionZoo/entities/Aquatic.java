@@ -1,10 +1,10 @@
 package tn.esprit.gestionZoo.entities;
 
-<<<<<<< HEAD
 public non-sealed abstract  class  Aquatic extends Animal implements Carnivore<Food>{
-=======
+
 public non-sealed abstract class  Aquatic extends Animal{
->>>>>>> 2881431055b6b1c96834f421134087235c4dc839
+
+public non-sealed abstract class  Aquatic extends Animal{
 
    protected String habitat ;
    public Aquatic(){}
@@ -31,7 +31,7 @@ public non-sealed abstract class  Aquatic extends Animal{
         return getAge() == aquatic.getAge() && getName().equals(aquatic.getName()) && habitat.equals(aquatic.habitat) ;
 
     }
-<<<<<<< HEAD
+
     @Override
     public void eatMeat(Food meat){
         if(meat.equals(Food.MEAT))
@@ -39,8 +39,7 @@ public non-sealed abstract class  Aquatic extends Animal{
         else
             System.out.println("Aquatic animal n'est pas carnivore");
     }
-=======
->>>>>>> 2881431055b6b1c96834f421134087235c4dc839
+
 }
 
 

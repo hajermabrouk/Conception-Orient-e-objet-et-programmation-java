@@ -1,6 +1,5 @@
 package tn.esprit.gestionZoo.entities;
 
-<<<<<<< HEAD
 public final class Terrestrial extends Animal implements Omnivore<Food> {
    protected int nbrLegs;
 
@@ -32,7 +31,7 @@ public final class Terrestrial extends Animal implements Omnivore<Food> {
      else
        System.out.println("Terrestrial animal n'est  pas un omnivore ");
  }
-=======
+
 public final class Terrestrial extends Animal {
    protected int nbrLegs;
    Terrestrial(){}
@@ -40,5 +39,5 @@ public final class Terrestrial extends Animal {
    {  super(family,name,age,isMammal);
       this.nbrLegs=nbrLegs;}
 
->>>>>>> 2881431055b6b1c96834f421134087235c4dc839
+
 }

@@ -189,11 +189,14 @@ public class Zoo {
     }
 
     public float maxPenguinSwimmingDepth() {   //instruction 29
-<<<<<<< HEAD
+
         float maxDepth = 0.0f;
-=======
+
         float maxDepth = 0.f;
->>>>>>> 2881431055b6b1c96834f421134087235c4dc839
+
+
+        float maxDepth = 0.f;
+
         for (Aquatic aquatic : aquaticAnimals) {
             if (aquatic instanceof Penguin) {
                 if (((Penguin) aquatic).swimmingDepth > maxDepth)
