@@ -1,4 +1,6 @@
+
 //Prosit: 7
+
 
 Ce prosit aborde la gestion des exceptions pour assurer le bon déroulement de l'application même dans des circonstances exceptionnelles.
 
