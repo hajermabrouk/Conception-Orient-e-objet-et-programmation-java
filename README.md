@@ -1,4 +1,4 @@
-# JavaEsprit
+// JavaEsprit
 Prosit 5 :
 
 Ce prosit poursuit le développement du logiciel de gestion de zoo en Java en introduisant deux nouvelles familles d'animaux : Aquatiques et Terrestres. Chaque famille a des attributs spécifiques : les animaux aquatiques sont caractérisés par leur habitat, tandis que les animaux terrestres sont définis par le nombre de pattes. En outre, des sous-classes sont créées pour des animaux aquatiques spécifiques : le dauphin et le pingouin, chacun ayant des attributs supplémentaires spécifiques tels que la vitesse de nage et la profondeur de nage.
