@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-#JAVA
-=======
 
 JAVA
->>>>>>> c9c5331164310fd93a090bb7aa4bb344abb5a77b
 Prosit 9 :
 
 Ce prosit concerne le développement d'une application de gestion des employés pour une société tunisienne. Chaque employé est caractérisé par plusieurs attributs tels qu'un identifiant, un nom, un prénom, un département et un grade. La classe employé inclut des constructeurs, des méthodes getters & setters, des redéfinitions de méthodes telles que `equals` et `toString` pour comparer et afficher les employés.
