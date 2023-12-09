@@ -1,5 +1,9 @@
 package tn.esprit.gestionZoo.entities;
 
+public non-sealed abstract  class  Aquatic extends Animal implements Carnivore<Food>{
+
+public non-sealed abstract class  Aquatic extends Animal{
+
 public non-sealed abstract class  Aquatic extends Animal{
 
    protected String habitat ;
@@ -27,6 +31,15 @@ public non-sealed abstract class  Aquatic extends Animal{
         return getAge() == aquatic.getAge() && getName().equals(aquatic.getName()) && habitat.equals(aquatic.habitat) ;
 
     }
+
+    @Override
+    public void eatMeat(Food meat){
+        if(meat.equals(Food.MEAT))
+            System.out.println("Aquatic animal est carnivore");
+        else
+            System.out.println("Aquatic animal n'est pas carnivore");
+    }
+
 }
 
 
