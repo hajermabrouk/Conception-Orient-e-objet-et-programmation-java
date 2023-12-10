@@ -2,6 +2,9 @@ package main;
 import entities.*;
 
 
+import java.util.*;
+import java.util.function.Consumer;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,5 +47,47 @@ public class main {
         gestiondep.displayDepartement();
         System.out.println("La liste triée est:");
         System.out.println(gestiondep.trierDepartementById());
+
+        AffectationHashMap map=new AffectationHashMap();
+        map.ajouterEmployeDepartement(employe1,departement1);
+        System.out.println("Map employés et Départements");
+        map.afficherEmployesEtDepartements();
+        map.ajouterEmployeDepartement(employe1,departement4);
+        System.out.println("Map employés et Départements aprés mise à jour ");
+        map.afficherEmployesEtDepartements();
+        System.out.println("liste des departements");
+        map.afficherDepartements();
+        System.out.println("liste des employés");
+        map.afficherEmployes();
+        map.ajouterEmployeDepartement(employe2,departement4);
+        map.supprimerEmploye(employe2);
+        map.supprimerEmployeEtDepartement(employe2,departement1);
+        System.out.println(map.rechercherEmploye(employe1));
+        System.out.println(map.rechercherDepartement(departement1));
+        map.ajouterEmployeDepartement(employe2,departement4);
+        System.out.println("map des départements et employés");
+        System.out.println(map.trierMap());
+      
+        StudentManagement studentManagement = new StudentManagement();
+        List <Etudiant>students=new ArrayList<>();
+        Etudiant etd1=new Etudiant(100,21,"Nawres");
+        Etudiant etd2=new Etudiant(20,20,"Sarra");
+        Etudiant etd3=new Etudiant(35,22,"Amir");
+        Etudiant etd5=studentManagement.createStudent(()->new Etudiant(12,28,"nnnn"));
+        students.add(etd1);
+        students.add(etd2);
+        students.add(etd3);
+        students.add(etd5);
+        System.out.println("la liste des étudiants");
+        studentManagement.displayStudents(students, (Etudiant etd)-> System.out.println(etd.toString()));
+        System.out.println("la liste des étudiants selon leurs id");
+        studentManagement.displayStudentsByFilter(students,(Etudiant etd)->etd.getId()>40, (Etudiant etd)->System.out.println(etd.toString()));
+        System.out.println("Liste des noms des etudiants");
+        System.out.println(studentManagement.returnStudentsNames(students,(Etudiant etd) -> etd.getNom()));
+        System.out.println("Liste des etudiants triée selon l'age ");
+        List<Etudiant> listeSorted=studentManagement.sortStudentsById(students, (Etudiant etd6,Etudiant etd7)-> etd6.getAge()- etd7.getAge());
+        System.out.println(listeSorted);
+        studentManagement.convertToStream(students);
+
     }
 }

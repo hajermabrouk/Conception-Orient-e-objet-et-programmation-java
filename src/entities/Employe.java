@@ -67,4 +67,12 @@ public class Employe implements Comparable<Employe> {
         return this.identifiant - employe.identifiant;
     }
 
+    public int hashCode(){
+        return identifiant + nom.hashCode();  }
 }
+
+
+
+
+}
+=

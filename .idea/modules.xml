@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+=
+      <module fileurl="file://$PROJECT_DIR$/gestionEmploye.iml" filepath="$PROJECT_DIR$/gestionEmploye.iml" />
+
 
       <module fileurl="file://$PROJECT_DIR$/gestionEmploye.iml" filepath="$PROJECT_DIR$/gestionEmploye.iml" />
 
       <module fileurl="file://$PROJECT_DIR$/Zoo.iml" filepath="$PROJECT_DIR$/Zoo.iml" />
+
 
     </modules>
   </component>
