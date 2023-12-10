@@ -44,8 +44,13 @@ public class DepartementHashSet implements IDepartement<Departement> {
     }
     @Override
     public TreeSet<Departement> trierDepartementById() {
+
         TreeSet treeset = new TreeSet<>();
         treeset.addAll(hashset);
         return  treeset;
+
+        TreeSet treeset = new TreeSet<>(hashset);
+        return treeset;
+
     }
 }

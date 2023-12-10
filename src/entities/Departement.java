@@ -58,7 +58,9 @@ public class Departement implements Comparable<Departement> {
     public int compareTo(Departement dep){
         return this.id-dep.id;
     }
+
     @Override
     public int hashCode(){
         return id+ nomDep.hashCode();  }
+
 }
